@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=php-crud';
+    $dsn = 'mysql:host=localhost;dbname=testphp1';
     $username = 'root';
     $password = '';
 
