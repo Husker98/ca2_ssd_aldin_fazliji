@@ -38,6 +38,26 @@ include('includes/header.php');
                    value="<?php echo $records['price']; ?>">
             <br>
 
+            <label>Licensed Date:</label>
+            <input type="date" name="Date"
+                   value="<?php echo $records['Date']; ?>">
+            <br>
+
+            <label>Colour:</label>
+            <input type="input" name="Colour"
+                   value="<?php echo $records['Colour']; ?>">
+            <br>
+
+            <label>Engine:</label>
+            <input type="input" name="Engine"
+                   value="<?php echo $records['Engine']; ?>">
+            <br>
+
+            <label>HorsePower:</label>
+            <input type="input" name="HorsePower"
+                   value="<?php echo $records['HorsePower']; ?>">
+            <br>
+
             <label>Image:</label>
             <input type="file" name="image" accept="image/*" />
             <br>            

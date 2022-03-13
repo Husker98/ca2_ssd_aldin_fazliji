@@ -5,11 +5,15 @@ $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $name = filter_input(INPUT_POST, 'name');
 $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
+$Date = filter_input(INPUT_POST, 'Date');
+$Colour = filter_input(INPUT_POST, 'Colour');
+$Engine = filter_input(INPUT_POST, 'Engine');
+$HorsePower = filter_input(INPUT_POST, 'HorsePower');
 
 // Validate inputs
 if ($record_id == NULL || $record_id == FALSE || $category_id == NULL ||
 $category_id == FALSE || empty($name) ||
-$price == NULL || $price == FALSE) {
+$price == NULL || $price == FALSE || $Date == Null || $Colour == NULL || $Engine == NULL || $HorsePower == NULL) {
 $error = "Invalid record data. Check all fields and try again.";
 include('error.php');
 } else {
@@ -52,12 +56,20 @@ $query = 'UPDATE records
 SET categoryID = :category_id,
 name = :name,
 price = :price,
+Date = :Date,
+Colour = :Colour,
+Engine = :Engine,
+HorsePower = :HorsePower,
 image = :image
 WHERE recordID = :record_id';
 $statement = $db->prepare($query);
 $statement->bindValue(':category_id', $category_id);
 $statement->bindValue(':name', $name);
 $statement->bindValue(':price', $price);
+$statement->bindValue(':Date', $Date);
+$statement->bindValue(':Colour', $Colour);
+$statement->bindValue(':Engine', $Engine);
+$statement->bindValue(':HorsePower', $HorsePower);
 $statement->bindValue(':image', $image);
 $statement->bindValue(':record_id', $record_id);
 $statement->execute();
