@@ -42,11 +42,11 @@ $statement3->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-<h1>Record List</h1>
+<h1 id = "title">Record List</h1>
 
 <aside>
 <!-- display a list of categories -->
-<h2>Categories</h2>
+<h2>Models/Makes</h2>
 <nav>
 <ul>
 <?php foreach ($categories as $category) : ?>
@@ -65,7 +65,7 @@ include('includes/header.php');
 <table>
 <tr>
 <th>Image</th>
-<th>Name</th>
+<th>Model</th>
 <th>Price</th>
 <th>Delete</th>
 <th>Edit</th>

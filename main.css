@@ -38,8 +38,7 @@ nav ul li {
     padding-bottom: 0.5em;
 }
 section {
-    float: left;
-    width: 800PX;
+    width: 1500PX;
     padding-bottom: 1.5em;
 }
 footer {
@@ -56,6 +55,9 @@ h1 {
     font-size: 150%;
     margin: 0;
     padding: .5em 0 .25em;
+}
+h1 title{
+    text-align: center;
 }
 h2 {
     font-size: 120%;
@@ -83,6 +85,7 @@ a:hover {
 table {
     border: 1px solid black;
     border-collapse: collapse;
+    width: 1000px;
 }
 td, th {
     border: 1px dashed black;
