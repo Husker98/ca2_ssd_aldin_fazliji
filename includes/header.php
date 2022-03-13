@@ -11,6 +11,5 @@
   <a class="active" href="index.php">Home</a>
   <a href="add_record_form.php">Add Car</a>
   <a href="category_list.php">Manage Makers</a>
-  <a href="#about">About</a>
 </div>
 </header>

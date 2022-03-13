@@ -40,7 +40,7 @@ include('includes/header.php');
 
             <label>Licensed Date:</label>
             <input type="date" name="Date"
-                   value="<?php echo $records['Date']; ?>">
+                   value="<?php echo $records['Date']; ?>" required>
             <br>
 
             <label>Colour:</label>
