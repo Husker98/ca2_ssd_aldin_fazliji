@@ -35,7 +35,7 @@ include('includes/header.php');
             <br>   
 
             <label>Date Licensed:</label>
-            <input type="input" name="Date" required>
+            <input type="date" name="Date" required>
             <br>   
             
             <label>Colour:</label>
@@ -59,7 +59,6 @@ include('includes/header.php');
             <input type="submit" value="Add Record">
             <br>
         </form>
-        <p><a href="index.php">View Homepage</a></p>
     <?php
 include('includes/footer.php');
 ?>
